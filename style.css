@@ -9,44 +9,294 @@
   box-sizing: border-box;
 }
 
-header{
+body {
+  background-color: #f8f8f8;
+}
+
+header {
   height: 80vh;
-  background-color: #4516FE;
+  background-color: #4516fe;
   position: relative;
 }
 
-nav{
+nav {
   position: absolute;
   top: 5%;
   right: 5%;
   color: #ffffff;
-  width: 30vw;
-  font-size: .8rem;
+  width: 50vw;
+  font-size: 0.8rem;
 }
 
-nav > *{
+nav > * {
   margin-left: 5%;
 }
 
-.nav-item-active{
+.nav-item-active {
   padding: 5px 10px;
   background-color: #ffffff;
-  color: #4516FE;
+  color: #4516fe;
   border: none;
   border-radius: 3px;
 }
 
-.logo{
+.logo {
   position: absolute;
   top: 7%;
   left: 5%;
 }
 
-.header-image{
+.header-image {
   position: absolute;
   right: 0;
   width: 47%;
   top: 15%;
 }
 
-.
+.header-text {
+  color: #ffffff;
+  padding-top: 15%;
+  margin-left: 5%;
+  font-size: 2rem;
+  width: 50vw;
+}
+
+.header-text p {
+  font-size: 1.4rem;
+}
+
+/* -----------------------Companies--------------------------- */
+.companies {
+  display: flex;
+  width: 45vw;
+  margin-left: 5%;
+  margin-top: 25px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.companies a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 1.7rem;
+}
+
+/* --------------------------API----------- */
+.api-heading {
+  font-weight: bolder;
+  margin: 5%;
+}
+
+.cards {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  padding: 60px 20px;
+  border-radius: 20px;
+  flex-basis: 250px;
+}
+
+.card h3 {
+  font-size: 1.7rem;
+  margin: 20px 0;
+}
+
+.card.active {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card.active h3 {
+  color: #4516fe;
+}
+
+/* ----------------------BLOG----------------- */
+.blog-heading h1 {
+  margin: 5%;
+}
+.blog-cards {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.blog-card {
+  display: flex;
+  width: 43vw;
+  height: 43vh;
+  overflow: hidden;
+  flex-basis: 650px;
+}
+
+.content {
+  padding: 35px 35px 0 35px;
+  background-color: #ffffff;
+}
+
+.blog-image img {
+  width: 350px;
+}
+.blog-content {
+  padding-bottom: 60px;
+}
+
+.blog-content h6 {
+  color: #4516fe;
+  font-size: 1rem;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+}
+
+.blog-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* -------------------------FAQ----------- */
+
+.faq-section {
+  background-color: #e9edff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.faq-content {
+  padding: 3%;
+}
+.faq-content h2 {
+  font-size: 2rem;
+}
+
+.faq-content h4 {
+  margin: 15px 0;
+}
+
+.faq-content button {
+  background-color: #4516fe;
+  color: #ffffff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+.faq-image img {
+  width: 45vw;
+  height: 45vh;
+}
+
+/* -------------------Download----------- */
+.download-section {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 5% 0;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.download-email {
+  width: 40vw;
+  border-radius: 40px;
+  background-color: #e9edff;
+  flex-basis: 600px;
+}
+
+.download-email input {
+  border: none;
+  width: 70%;
+  background: transparent;
+  font-size: 1.3rem;
+  padding: 20px;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form button {
+  background-color: #4516fe;
+  color: #ffffff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+}
+
+/* --------------footer----------------- */
+.footer-section {
+  background-color: #4516fe;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.footer-section .list {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  margin-top: 20px;
+}
+
+.footer-section .list li {
+  color: #ffffff;
+  list-style: none;
+}
+
+.footer-right .logos-list {
+  display: flex;
+  color: #ffffff;
+  list-style: none;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 25vw;
+}
+
+.footer-right .footer-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  header {
+    height: 80vh;
+  }
+  .header-image {
+    width: 47%;
+    top: 35%;
+  }
+
+  .header-text {
+    font-size: 1.8rem;
+  }
+
+  .header-text p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 890px) {
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header-text {
+    font-size: 1.6rem;
+  }
+  .companies {
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+}
